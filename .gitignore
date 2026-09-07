@@ -1,0 +1,7 @@
+**/.terraform/*
+**.terraform/*
+.terraform.lock.hcl
+.\Class1\.terraform\
+.\Class1\.terraform.lock.hcl
+*.tfstate.*
+*.tfstate.backup*
