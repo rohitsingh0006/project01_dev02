@@ -28,16 +28,9 @@ stages:
             provider: 'azurerm'
             command: 'plan'
             environmentServiceNameAzureRM: 'sc-dev-tf-infra'
-
-  - stage: "TerraformApply"
-    displayName: "Terraform Apply Step"
-    jobs:
-    - job: "tfapply"
-      displayName: "Terraform Apply Step"
-      steps:
-      - task: TerraformTask@5
-        inputs:
-          provider: 'azurerm'
-          command: 'apply'
-          environmentServiceNameAzureRM: 'sc-dev-tf-infra'
-
+        
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'apply'
+            environmentServiceNameAzureRM: 'sc-dev-tf-infra'
