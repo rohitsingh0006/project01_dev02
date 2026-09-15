@@ -16,7 +16,6 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'init'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/project01_dev02'
             backendServiceArm: 'sc-dev-tf-infra'
             backendAzureRmResourceGroupName: 'rgterraformstatefile'
             backendAzureRmStorageAccountName: 'mystoragefortfstatefile'
@@ -28,7 +27,6 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'plan'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/project01_dev02'
             environmentServiceNameAzureRM: 'sc-dev-tf-infra'
 
   - stage: "TerraformApply"
