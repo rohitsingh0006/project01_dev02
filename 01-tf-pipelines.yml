@@ -28,7 +28,7 @@ stages:
   - stage: "TerraformApply"
     displayName: "Terraform Apply Step"
     jobs:
-    - job: "terraformapply"
+    - job: "tfapply"
       displayName: "Terraform Apply Step"
       steps:
       - task: TerraformTask@5
