@@ -17,7 +17,7 @@ stages:
             provider: 'azurerm'
             command: 'init'
             backendAzureRmUseEntraIdForAuthentication: false
-            backendServiceArm: 'pay-as-you-go-dev(67bc5246-befd-4265-a0e6-6b7f6196364f)'
+            backendServiceArm: 'sc-dev-tf-infra'
             backendAzureRmStorageAccountName: 'mystoragefortfstatefile'
             backendAzureRmContainerName: 'mycontainerfortfstate'
             backendAzureRmKey: 'project01-tfstate'
