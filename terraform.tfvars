@@ -13,6 +13,6 @@ vnets = {
     name                = "vent-dev01"
     resource_group_name = "rg-dev01"
     location            = "south india"
-    address_space       = ["192.168.1.0/8"]
+    address_space       = ["192.168.0.0/16"]
   }
 }
