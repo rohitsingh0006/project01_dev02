@@ -6,7 +6,7 @@ module "resource_groups" {
 }
 
 module "virtual_networks" {
-  depends_on = module.resource_groups
+  depends_on = [module.resource_groups]
   source     = "git::https://github.com/rohitsingh0006/terraform_az_modules.git//virtual_networks"
   vnets      = var.vnets
 }
