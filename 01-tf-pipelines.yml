@@ -16,8 +16,8 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'init'
-            backendAzureRmUseEntraIdForAuthentication: false
             backendServiceArm: 'sc-dev-tf-infra'
+            backendAzureRmResourceGroupName: 'rgterraformstatefile'
             backendAzureRmStorageAccountName: 'mystoragefortfstatefile'
             backendAzureRmContainerName: 'mycontainerfortfstate'
             backendAzureRmKey: 'project01-tfstate'
